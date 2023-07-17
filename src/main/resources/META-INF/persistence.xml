@@ -8,6 +8,8 @@
 
     <persistence-unit name="manar">
 
+
+
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" />
             <property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe" />
