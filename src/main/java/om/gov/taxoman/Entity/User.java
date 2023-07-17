@@ -1,13 +1,14 @@
 package om.gov.taxoman.Entity;
 
-
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
 import lombok.Data;
 
-@Entity
 @Data
-@Table(name = "USERS")
-public class User {
+@MappedSuperclass
+public abstract class User {
 
     @Id
     @GeneratedValue
@@ -19,4 +20,5 @@ public class User {
 
     @Column(name = "PASSWORD")
     private String password;
+
 }

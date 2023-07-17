@@ -11,13 +11,13 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "CUSTOMERS")
-public class Customer extends User {
+@Table(name = "PROPERTY_OWNERS")
+public class PropertyOwner extends User {
 
-    @Column(name = "FULL_NAME")
-    private String fullName;
+    @Column(name = "PHONE_NUMBER")
+    private String phoneNumber;
 
-    @OneToMany(mappedBy = "customer")
-    private List<Rental> rentals = new ArrayList<>();
+    @OneToMany(mappedBy = "propertyOwner")
+    private List<Property> properties = new ArrayList<>();
 
 }
