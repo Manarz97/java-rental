@@ -35,7 +35,7 @@ public class Main {
         property.setDescription("Jeep Wrangler 4xe – white");
         property.setPrice(15.50);
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("manar");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("manar1");
         EntityManager em = emf.createEntityManager();
         em.getTransaction() .begin();
 

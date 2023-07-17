@@ -20,6 +20,6 @@ public class Order {
     private OrderStatus status;
 
     @ManyToMany
-    private List<property> properties;
+    private List<property> property;
 
 }
