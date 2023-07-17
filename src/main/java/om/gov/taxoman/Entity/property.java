@@ -8,8 +8,7 @@ import java.util.List;
 
 @Data
 @Entity
-
-@Table(name = "CAR_PRODUCTS")
+@Table(name = "PROPERTY")
 public class property {
 
     @Id

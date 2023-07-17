@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "CUSTOMERS")
-public class Customer {
+class Customer {
 
     @Id
     @GeneratedValue
