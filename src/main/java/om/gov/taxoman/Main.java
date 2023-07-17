@@ -1,10 +1,9 @@
 package om.gov.taxoman;
 
-import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import om.gov.taxoman.Entity.Product;
+import om.gov.taxoman.Entity.property;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -31,10 +30,10 @@ public class Main {
 
 
 
-        Product product =new Product();
-        product.setName("Jeep");
-        product.setDescription("Jeep Wrangler 4xe – white");
-        product.setPrice(15.50);
+        property property =new property();
+        property.setName("Jeep");
+        property.setDescription("Jeep Wrangler 4xe – white");
+        property.setPrice(15.50);
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("manar");
         EntityManager em = emf.createEntityManager();
@@ -42,7 +41,7 @@ public class Main {
 
 
 
-        em.persist(product);
+        em.persist(property);
         em.getTransaction() .commit();
 
         em.close();

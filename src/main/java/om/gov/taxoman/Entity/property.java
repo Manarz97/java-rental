@@ -9,8 +9,8 @@ import java.util.List;
 @Data
 @Entity
 
-@Table(name = "PRODUCTS")
-public class Product {
+@Table(name = "CAR_PRODUCTS")
+public class property {
 
     @Id
     @GeneratedValue
@@ -29,6 +29,6 @@ public class Product {
     @ElementCollection
     private List<String> urls;
 
-    @ManyToMany(mappedBy = "products")
+    @ManyToMany(mappedBy = "property")
     private List<Order> orders;
 }
